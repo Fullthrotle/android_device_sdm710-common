@@ -319,6 +319,10 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     android.hardware.power@1.2-service-qti
 
+# Prebuilt \kernel
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/Image.gz-dtb:kernel
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson \
